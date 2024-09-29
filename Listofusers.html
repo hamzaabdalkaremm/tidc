@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة المستخدمين</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2d378b;
+            color: white;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-align: right;
+            width: 100%;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #2d378b;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .user-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #2d378b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        table th {
+            background-color: #2d378b;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        .actions button {
+            padding: 8px 12px;
+            background-color: #2d378b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .actions button:hover {
+            background-color: #2d378b;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="user-icon">U</div>
+        <h1>قائمة المستخدمين</h1>
+        <table>
+            <tr>
+                <th>رقم</th>
+                <th>الاسم</th>
+                <th>البريد الإلكتروني</th>
+                <th>الصلاحيات</th>
+                <th>الحالة</th>
+                <th>الإجراءات</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>محمد علي</td>
+                <td>mohammed@example.com</td>
+                <td>مدير</td>
+                <td>نشط</td>
+                <td class="actions">
+                    <button>تعديل</button>
+                    <button>حذف</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>أحمد حسن</td>
+                <td>ahmed@example.com</td>
+                <td>مستخدم</td>
+                <td>غير نشط</td>
+                <td class="actions">
+                    <button>تعديل</button>
+                    <button>حذف</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>سالم محمد</td>
+                <td>salem@example.com</td>
+                <td>مستخدم</td>
+                <td>نشط</td>
+                <td class="actions">
+                    <button>تعديل</button>
+                    <button>حذف</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="sidebar">
+        <h2>القائمة</h2>
+        <ul>
+            <li><a href="homepage.html">الصفحة الرئيسية</a></li>
+            <li><a href="basicdata.html">البيانات الأساسية</a></li>
+            <li><a href="Searchpage.html">قائمة البحث</a></li>
+            <li><a href="Listofusers.html">قائمة المستخدمين</a></li>
+            <li><a href="Listofevidence.html">قائمة الأدلة</a></li>
+            <li><a href="Userpermissions.html">صلاحيات المستخدمين</a></li>
+            <li><a href="Statistics.html">الإحصائيات</a></li>
+        </ul>
+    </div>
+</body>
+</html>

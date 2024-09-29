@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صلاحيات المستخدمين</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2d378b;
+            color: white;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            text-align: right;
+            width: 100%;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #2d378b;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .user-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #2d378b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .permissions-table {
+            width: 90%;
+            background-color: white;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .permissions-table th, .permissions-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .permissions-table th {
+            background-color: #2d378b;
+            color: white;
+        }
+
+        .permissions-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .permissions-table td button {
+            padding: 10px;
+            border: none;
+            background-color: #2d378b;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .permissions-table td button:hover {
+            background-color: #2d378b;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="user-icon">U</div>
+        <h1>صلاحيات المستخدمين</h1>
+        <table class="permissions-table">
+            <thead>
+                <tr>
+                    <th>اسم المستخدم</th>
+                    <th>الدور</th>
+                    <th>الصلاحيات</th>
+                    <th>إجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>أحمد محمد</td>
+                    <td>مدير</td>
+                    <td>إدارة النظام، تعديل البيانات، إضافة مستخدمين</td>
+                    <td><button>تعديل</button> <button>حذف</button></td>
+                </tr>
+                <tr>
+                    <td>فاطمة علي</td>
+                    <td>محرر</td>
+                    <td>تعديل البيانات، إضافة محتوى</td>
+                    <td><button>تعديل</button> <button>حذف</button></td>
+                </tr>
+                <tr>
+                    <td>يوسف سالم</td>
+                    <td>مشاهد</td>
+                    <td>عرض البيانات فقط</td>
+                    <td><button>تعديل</button> <button>حذف</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="sidebar">
+        <h2>القائمة</h2>
+        <ul>
+            <li><a href="homepage.html">الصفحة الرئيسية</a></li>
+            <li><a href="basicdata.html">البيانات الأساسية</a></li>
+            <li><a href="Searchpage.html">قائمة البحث</a></li>
+            <li><a href="Listofusers.html">قائمة المستخدمين</a></li>
+            <li><a href="Listofevidence.html">قائمة الأدلة</a></li>
+            <li><a href="Userpermissions.html">صلاحيات المستخدمين</a></li>
+            <li><a href="Statistics.html">الإحصائيات</a></li>
+        </ul>
+    </div>
+</body>
+</html>
